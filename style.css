@@ -462,8 +462,13 @@ footer{
 }
 
 .bxslider img{
-  height: 900px;
+  height: 1200px;
 }
+
+.bxslider{
+  height: 1200px;
+}
+
 
 
 .botonopen{
