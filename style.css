@@ -1,0 +1,656 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,300,900);
+
+/*
+	Theme Name: EfectoVirtual
+	Theme URI: http://efectovirtual.com
+	Description: Developed for J2T
+	Version: 1.5
+	Author: Alberto Rodriguez (@efectovirtual)
+	Author URI: http://efectovirtual.com
+	Tags: Bootstrap, HTML5, CSS3, Photoshop
+
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+
+
+/* ================== CSS J2T =====================*/
+
+
+
+
+a:hover{
+  text-decoration: none !important;
+}
+
+html{
+
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body{
+  font-family: 'Lato', Helvetica, Arial, sans-serif !important;
+  margin: 0;
+  padding: 0;
+}
+
+footer{
+  width: 100%;
+  min-height: 400px;
+  background: #212020 url('images/bgfooter.jpg') !important;
+  background-position: center center !important; 
+  background-size: cover !important; 
+}
+
+.bxslider{
+  min-height: 600px;
+}
+
+
+.logo{
+  margin-top: 30px;
+}
+
+.botonopen{
+  margin:30px;
+  width: 300px;
+  height: 265px;
+  background: rgba(0,0,0,.6) url(images/boton-f.png) no-repeat;
+  background-position: bottom;
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.botonopen p{
+  font-weight: 300;
+}
+
+.botonopen2 p{
+  font-weight: 300;
+  font-size: 25px;
+}
+
+.botonopen2 strong{
+  font-size: 30px;
+  }
+
+.botonopen2{
+  margin:30px;
+  width: 360px;
+  height: 265px;
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  vertical-align: middle;
+  display: table-cell;
+  background: rgba(240,18,49,.6) url(images/boton-f.png) no-repeat;
+  background-position: bottom;
+
+}
+
+.botonblanco{
+  width: 52px;
+  height: 58px;
+  color: #fff;
+  background: #fff;
+  position: absolute;
+  left:50%;
+  margin:0 0 0 -26px;
+
+}
+
+.botonopen p, .botonopen2 p {
+  margin-top: -30px;
+}
+
+
+.container-fluid {
+margin: 0;
+padding: 0;
+}
+.ontop {
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    left: 0;
+}
+
+.textfooter{
+    padding-top: 50px;
+
+}
+.textfooter p{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+  text-align: center;
+}
+.botonesfooter{
+  margin-top: 50px;
+  text-align: center;
+}
+
+.botonesfooter li{
+  display: inline;
+  border-right: 1px solid #fff;
+  padding: 0 7px;
+  color: #fff;
+  font-size: 14px;
+
+}
+
+.botonesfooter li a{
+  color: #fff;
+}
+
+.menulogo{
+	margin-bottom: 100px;
+}
+
+.botonestop{
+  margin-top: 40px;
+}
+
+.botonestop li{
+  font-weight: 400;
+  display: inline;
+  padding: 0 20px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.botonestop li a{
+  color: #fff;
+}
+
+li.b1f{
+  border: none;
+}
+
+.botonj2t{
+  transition: all .5s;
+}
+.botonj2t:hover{
+  transform: scale(1.1,1.1);
+  text-decoration: none;
+}
+
+
+
+/* Menu Lenguage ===============================================================================*/
+
+.menu-language{
+	width: 200px;
+	padding-left: 30px
+}
+
+ul.menu-language{
+    margin: 18px 0 0 0;
+    list-style: none;
+    background: url(img/flecha-idioma.png);
+    background-repeat: no-repeat;
+    background-position: 175px 6px;
+}
+
+h1, h2, h3, h4, h5, p{
+	font-family:'Lato',Helvetica,Arial,sans-serif;
+}
+
+
+.submenu-language{
+	border-radius: 5px;
+	padding-top: 5px;
+
+}
+
+ul.submenu-language a{
+	font-size: 14px;
+    color: #002E62 !important;
+}
+
+ul.menu-language a{
+	text-decoration: none;
+	font-size: 14px;
+    color: #fff;
+}
+
+
+
+ul.menu-language li{
+	font-size: 13px; 
+}
+
+ul.menu-language li:hover{
+	cursor:pointer;
+}
+
+ul.menu-language ul {
+ display: none;
+ position: absolute;
+ list-style: none;
+ background: #fff;
+ border: 1px solid rgba(0,0,0,.1);
+ z-index: 10;
+ padding: 7px 0 0 15px;
+ }
+
+ ul.menu-language ul li{
+ float: left;
+ padding: 0px 7px 10px 30px;
+ transition: .5s all;
+}
+
+ ul.menu-language ul li:hover{
+ 	transform: scale(1.1,1.1);
+}
+ 
+ 
+ul.menu-language ul li a{
+
+}
+  
+ul.menu-language ul li a:hover{
+ cursor:pointer;
+}
+  
+ul.menu-language li:hover ul ul,
+ul.menu-language li:hover ul ul ul,
+ul.menu-language li.iehover ul ul,
+ul.menu-language li.iehover ul ul ul {
+ display: none;
+ cursor:pointer;
+}
+  
+ul.menu-language li:hover ul,
+ul.menu-language ul li:hover ul,
+ul.menu-language ul ul li:hover ul,
+ul.menu-language li.iehover ul,
+ul.menu-language ul li.iehover ul,
+ul.menu-language ul ul li.iehover ul {
+ display: block;
+ cursor:pointer;
+}
+
+.lang-item-en{
+	background: url(img/English-icon.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 2px;
+}
+
+.lang-item-es{
+	background: url(img/Spain-icon.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 2px;
+}
+
+.lang-item-cn{
+	background: url(img/China-icon2.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 2px;
+}
+
+/* Fin Menu Language ===============================================================================*/
+
+
+/*------------------------------------*\
+    MAIN
+\*------------------------------------*/
+
+/* global box-sizing */
+*,
+*:after,
+*:before {
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+/* html element 62.5% font-size for REM use */
+html {
+
+}
+body {
+
+}
+/* clear */
+.clear:before,
+.clear:after {
+    content:' ';
+    display:table;
+}
+
+.clear:after {
+    clear:both;
+}
+.clear {
+    *zoom:1;
+}
+img {
+	max-width:100%;
+	vertical-align:bottom;
+}
+a {
+	color:#444;
+	text-decoration:none;
+}
+a:hover {
+	color:#444;
+}
+a:focus {
+	outline:0;
+}
+a:hover,
+a:active {
+	outline:0;
+}
+input:focus {
+	outline:0;
+	border:1px solid #04A4CC;
+}
+
+/*------------------------------------*\
+    STRUCTURE
+\*------------------------------------*/
+
+/* wrapper */
+.wrapper {
+	max-width:1280px;
+	width:95%;
+	margin:0 auto;
+	position:relative;
+}
+/* header */
+.header {
+
+}
+/* logo */
+.logo {
+
+}
+.logo-img {
+
+}
+/* nav */
+.nav {
+
+}
+/* sidebar */
+.sidebar {
+
+}
+/* footer */
+.footer {
+
+}
+
+/*------------------------------------*\
+    PAGES
+\*------------------------------------*/
+
+
+
+/*------------------------------------*\
+    IMAGES
+\*------------------------------------*/
+
+
+
+/*------------------------------------*\
+	TYPOGRAPHY
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+    RESPONSIVE
+\*------------------------------------*/
+
+@media only screen and (min-width:320px) {
+
+}
+@media only screen and (min-width:480px) {
+
+}
+@media only screen and (min-width:768px) {
+
+}
+@media only screen and (min-width:1024px) {
+
+}
+@media only screen and (min-width:1140px) {
+
+}
+@media only screen and (min-width:1280px) {
+
+}
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),
+	   only screen and (min-resolution:144dpi) {
+
+}
+
+
+@media (max-width: 768px){
+	.botonestop li{
+	  display: block;
+	}
+
+	.botonestop{
+		margin-left: -60px;
+	}
+}
+
+@media (max-width: 1000px) {
+
+.logo{
+  margin-top: 50px;
+ 
+}
+
+
+footer{
+  min-height: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.bxslider img{
+  height: 900px;
+}
+
+
+.botonopen{
+  margin:20px;
+  width: 700px;
+  height: 230px;
+}
+
+.botonopen2{
+  margin:20px;
+  width: 700px;
+  height: 230px;
+  margin-left: -20px;
+
+}
+
+.botonblanco{
+  width: 52px;
+  height: 58px;
+  color: #fff;
+  background: #fff;
+  position: absolute;
+  left:50%;
+  margin:0 0 0 -26px;
+
+}
+
+.ontop .col-sm-12{
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-top: 10px;
+}
+
+
+
+.textfooter{
+    padding-top: 50px;
+
+}
+
+  
+}
+
+/*------------------------------------*\
+    MISC
+\*------------------------------------*/
+
+::selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+::-webkit-selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+::-moz-selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+
+/*------------------------------------*\
+    WORDPRESS CORE
+\*------------------------------------*/
+
+.alignnone {
+	margin:5px 20px 20px 0;
+}
+.aligncenter,
+div.aligncenter {
+	display:block;
+	margin:5px auto 5px auto;
+}
+.alignright {
+	float:right;
+	margin:5px 0 20px 20px;
+}
+.alignleft {
+	float:left;
+	margin:5px 20px 20px 0;
+}
+a img.alignright {
+	float:right;
+	margin:5px 0 20px 20px;
+}
+a img.alignnone {
+	margin:5px 20px 20px 0;
+}
+a img.alignleft {
+	float:left;
+	margin:5px 20px 20px 0;
+}
+a img.aligncenter {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+.wp-caption {
+	background:#FFF;
+	border:1px solid #F0F0F0;
+	max-width:96%;
+	padding:5px 3px 10px;
+	text-align:center;
+}
+.wp-caption.alignnone {
+	margin:5px 20px 20px 0;
+}
+.wp-caption.alignleft {
+	margin:5px 20px 20px 0;
+}
+.wp-caption.alignright {
+	margin:5px 0 20px 20px;
+}
+.wp-caption img {
+	border:0 none;
+	height:auto;
+	margin:0;
+	max-width:98.5%;
+	padding:0;
+	width:auto;
+}
+.wp-caption .wp-caption-text,
+.gallery-caption {
+	font-size:11px;
+	line-height:17px;
+	margin:0;
+	padding:0 4px 5px;
+}
+.sticky {
+
+}
+.bypostauthor {
+
+}
+
+/*------------------------------------*\
+    PRINT
+\*------------------------------------*/
+
+@media print {
+	* {
+		background:transparent !important;
+		color:#000 !important;
+		box-shadow:none !important;
+		text-shadow:none !important;
+	}
+	a,
+	a:visited {
+		text-decoration:underline;
+	}
+	a[href]:after {
+		content:" (" attr(href) ")";
+	}
+	abbr[title]:after {
+		content:" (" attr(title) ")";
+	}
+	.ir a:after,
+	a[href^="javascript:"]:after,
+	a[href^="#"]:after {
+		content:"";
+	}
+	pre,blockquote {
+		border:1px solid #999;
+		page-break-inside:avoid;
+	}
+	thead {
+		display:table-header-group;
+	}
+	tr,img {
+		page-break-inside:avoid;
+	}
+	img {
+		max-width:100% !important;
+	}
+	@page {
+		margin:0.5cm;
+	}
+	p,
+	h2,
+	h3 {
+		orphans:3;
+		widows:3;
+	}
+	h2,
+	h3 {
+		page-break-after:avoid;
+	}
+}
